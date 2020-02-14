@@ -1,0 +1,15 @@
+@import '../../../assets/styles/variables.scss';
+.Switch{
+
+    button{
+        width: 50%;
+        border:1px solid $orange;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    margin-bottom: 30px;
+}

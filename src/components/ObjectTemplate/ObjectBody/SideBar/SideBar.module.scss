@@ -1,0 +1,91 @@
+@import '../../../../assets/styles/variables.scss';
+
+.SideBar {
+    //border: 1px solid green;
+    width : 100%;
+
+    ul.info {
+        //border : 1px solid red;
+        padding: 0;
+        margin : 0;
+
+        li {
+            height : 70px;
+            display: flex;
+
+            &:nth-child(2n - 1) {
+                background: #F8F8F8;
+            }
+
+            span {
+                display        : flex;
+                align-items    : center;
+                justify-content: flex-start;
+                height         : 100%;
+               // border         : 1px solid green;
+
+                &:first-child {
+                    padding-left: 15px;
+                    width       : 50%;
+                }
+            }
+
+            .cena {
+                color       : $red;
+                font-weight : bold;
+                font-size   : 24px;
+                margin-right: 15px;
+            }
+
+            .currency {
+                font-weight: normal;
+                font-size  : 14px;
+                color      : $grey;
+            }
+
+            .row_name_bold {
+                font-weight: bold;
+                font-size  : 18px;
+                color      : $grey;
+            }
+
+            .row_name {
+                font-weight: 500;
+                font-size  : 18px;
+                color      : $grey_light;
+            }
+
+            .params {
+                font-weight: 500;
+                font-size  : 18px;
+                color      : $grey;
+            }
+
+            .tel {
+                display       : flex;
+                flex-direction: column;
+                justify-content: center;
+
+                a {
+                    font-size: 18px;
+                    color    : $grey;
+                }
+            }
+        }
+    }
+
+    ul.messengers{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 15px;
+    }
+    .wrap_button{
+    
+        button{
+            height: 60px;
+        }
+    }
+}

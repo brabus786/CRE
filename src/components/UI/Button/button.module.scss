@@ -1,0 +1,23 @@
+@import '../../../assets/styles/variables.scss';
+
+.Button {
+    width : 200px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid $orange;
+    color : $orange;
+    border-radius: 2px;
+    outline: none;
+    background-color: #fff;
+}
+
+.Button_orange {
+    background   : $orange;
+    color        : white;
+    box-shadow   : 0px 4px 15px rgba(184, 181, 178, 0.35);
+    border-radius: 2px;
+}
+
+.stretch{
+    width: 100%;
+}

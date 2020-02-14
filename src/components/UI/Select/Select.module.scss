@@ -1,0 +1,23 @@
+@import '../../../assets/styles/variables.scss';
+
+.wrap{
+    margin-bottom: 30px;
+    
+    .tytle_select{
+        font-size: 16px;
+        font-weight: 500;
+        color: $grey;
+        margin: 0 0 5px 0;
+    }
+    .select{
+        // border:1px solid grey;
+        width: 100%;
+        border:none;
+        height: 40px;
+        font-weight: normal;
+        color: $grey_light;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+    }
+}
