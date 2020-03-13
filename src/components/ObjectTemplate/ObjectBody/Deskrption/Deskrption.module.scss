@@ -5,6 +5,7 @@
         font-weight: bold;
         font-size  : 30px;
         color      : $grey;
+
     }
 
     .text {
@@ -12,5 +13,43 @@
         font-size  : 24px;
         line-height: 36px;
         color      : $grey;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px){
+    .deskrption {
+        .tytle {
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+    
+        .text {
+            
+        }
+    }
+}
+
+
+@media (max-width: 992px){
+    .deskrption {
+        .tytle {
+            margin-bottom: 15px;
+           
+        }
+    
+        .text {
+            font-size: 18px;
+            line-height: 1;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .deskrption {
+        .tytle {
+            margin-top: 30px;
+        }
+    
     }
 }

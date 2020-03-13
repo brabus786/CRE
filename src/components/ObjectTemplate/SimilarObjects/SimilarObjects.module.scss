@@ -23,3 +23,45 @@
     }
 
 }
+
+
+@media (max-width: 768px){
+    .SimilarObjects {
+     
+    
+        .wrap {
+              
+            .tytle {
+               
+            }
+    
+            .block_card{
+                grid-template-columns: 1fr 1fr;
+                column-gap: 15px;
+                row-gap: 15px;
+            }
+        }
+    
+    }
+    
+}
+
+@media (max-width: 576px){
+    .SimilarObjects {
+       
+        .wrap {
+              
+            .tytle {
+               
+            }
+    
+            .block_card{
+                grid-template-columns: 1fr 1fr;
+                column-gap: 5px;
+                row-gap: 5px;
+            }
+        }
+    
+    }
+    
+}

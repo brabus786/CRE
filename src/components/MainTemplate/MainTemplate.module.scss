@@ -14,7 +14,47 @@
         display              : grid;
         width                : 100%;
         grid-template-columns: 25% auto;
-
         column-gap: 20px;
+        //position: relative;
+    }
+}
+
+@media (max-width: 992px){
+    .block_content {
+    
+        h1 {
+            
+        }
+    
+        .wrap {
+    
+            column-gap: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .block_content {
+    
+        h1 {
+         
+        }
+    
+        .wrap {
+          
+            grid-template-columns:auto;
+
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .block_content { 
+        h1 {      
+        }
+        .wrap {         
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

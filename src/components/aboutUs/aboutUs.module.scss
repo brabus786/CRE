@@ -1,0 +1,126 @@
+@import '../../assets/styles/variables.scss';
+
+.aboutAu {
+   
+    .wrap_img {
+        width     : 100%;
+        height: 300px;
+        display   : flex;
+
+        img {
+            width     : 100%;
+            height    : 100%;
+            object-fit: cover;
+        }
+    }
+
+    .wrap {
+       // border    : 1px solid green;
+        padding: 30px 0;
+        .tytle {
+            font-size  : 36px;
+            font-weight: 500;
+            color      : $grey;
+            margin-top : 0;
+            line-height: 1;
+        }
+
+        .discription {
+            font-size  : 24px;
+            line-height: 36px;
+            color      : $grey_light;
+        }
+    }
+
+    .blok_comand {
+
+        .tytle {
+            text-align : center;
+            font-weight: 500;
+            font-size  : 24px;
+            color      : $grey;
+        }
+
+        .our_team {
+            // border               : 1px solid red;
+            display              : grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap           : 20px;
+
+            .card {
+                width: 100%;
+
+                .wrap_img_card {
+                    height: 334px;
+                   // border: 1px solid green;
+
+                    img {
+                        width     : 100%;
+                        height    : 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .name {
+                    text-align : center;
+                    font-weight: normal;
+                    font-size  : 24px;
+                    color: $grey;
+                }
+
+                .position {
+                    text-align: center;
+                    font-weight: normal;
+                    font-size  : 16px;
+                    color: $orange;
+                    line-height: 1;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    
+}
+
+@media (max-width: 992px){
+    .aboutAu{
+        .blok_comand{
+            .our_team{
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 576px){
+    .aboutAu{
+        .blok_comand{
+            .our_team{
+                grid-template-columns: 1fr;
+                column-gap: 20px;
+                row-gap: 40px;
+            }
+            
+            .our_team{
+                .wrap_img_card{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        max-width: 300px;
+                        margin: auto;
+                    }
+                }
+               
+            }
+        }
+    }
+}

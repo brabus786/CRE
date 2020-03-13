@@ -7,6 +7,31 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
+    position: relative;
+
+
+    .wrapSenks{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        background: $white;
+        text-align: center;
+        z-index: 10;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .active{
+        opacity: 1;
+        pointer-events: auto;
+    }
 
     input{
         box-sizing: border-box;
@@ -22,5 +47,27 @@
     button{
         height: 100%;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 992px){
+    .form{
+         grid-template-columns: 1fr 1fr;
+         column-gap: 10px;
+         row-gap: 10px;
+        }
+}
+
+@media (max-width: 576px){
+    .form{
+
+        input{
+            height: 40px;
+            font-size: 12px;
+        }
+
+        button{
+            font-size: 12px;
+        }
     }
 }

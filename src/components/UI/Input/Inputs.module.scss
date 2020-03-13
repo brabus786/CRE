@@ -1,5 +1,10 @@
 @import '../../../assets/styles/variables.scss';
-
+.tytle{
+    font-size: 16px;
+    font-weight: 500;
+    color: $grey;
+    margin: 0 0 5px 0;
+}
 .wrap {
     margin-bottom  : 30px;
     display        : flex;
@@ -18,3 +23,9 @@
         box-sizing  : border-box;
     }
 }
+
+@media (max-width: 992px){
+    .wrap{
+        margin-bottom: 15px;
+    }
+ }

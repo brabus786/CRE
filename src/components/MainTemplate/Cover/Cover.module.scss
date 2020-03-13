@@ -26,16 +26,22 @@
         font-size:25px;
         max-width: 530px;
         line-height: 1;
-        color:$grey;
-        text-shadow: 0px 4px 15px rgba(184, 181, 178, 0.35);
+        color:$orange;
+        text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     }
 }
 
 // Responsive
 
+@media (max-width: 992px){
+    .cover{
+        height: 330px;
+    }
+ }
+
 @media (max-width: 576px){
     .cover {
-        height: 330px;
+        height: 300px;
 
         img{
             height: 330px;

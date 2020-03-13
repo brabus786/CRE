@@ -1,0 +1,264 @@
+@import '../../assets/styles/variables.scss';
+
+.ServicesForSellers {
+   // border: 1px solid red;
+
+
+    .blok_img {
+        display   : flex;
+        height: 300px;
+
+        img {
+            width     : 100%;
+            height    : 100%;
+            object-fit: cover;
+        }
+    }
+
+    .How_we_are_working {
+        background : #FAFBFC;
+        padding-top: 30px;
+
+        .tytle {
+            text-align : center;
+            color      : $grey;
+            font-weight: 500;
+            font-size  : 30px;
+            margin-top : 0;
+        }
+
+        .blok_card {
+          //  border         : 1px solid grey;
+            display        : flex;
+            flex-wrap      : wrap;
+            justify-content: center;
+
+            .card {
+        //        border       : 1px solid green;
+                width        : 260px;
+                height       : 163px;
+                background   : $white;
+                padding      : 30px 15px;
+                box-sizing   : border-box;
+                margin-bottom: 30px;
+
+                .card_blok {
+           //         border         : 1px solid red;
+                    display        : flex;
+                    position       : relative;
+                    justify-content: center;
+
+                    span {
+                        position   : absolute;
+                        top        : 0;
+                        left       : 0;
+                        color      : $orange;
+                        font-weight: 500;
+                        font-size  : 24px;
+         //               border     : 1px solid red;
+                    }
+
+                //    img {}
+                }
+
+                .discr {
+                    font-weight: 500;
+                    font-size  : 18px;
+                    color      : $grey;
+                    text-align : center;
+                }
+
+            }
+
+            .spar {
+          //      border       : 1px solid red;
+                display      : flex;
+                align-items  : center;
+                margin-bottom: 30px;
+                padding      : 0 3px;
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .service_block {
+        .tytle{
+            text-align : center;
+            color      : $grey;
+            font-weight: 500;
+            font-size  : 30px;
+            margin-top : 30px;
+        }
+        .block_wrap {
+           // border               : 1px solid red;
+            padding              : 50px 50px;
+            box-sizing           : border-box;
+            display              : grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap           : 50px;
+
+            .block {
+              //  border : 1px solid grey;
+                display: flex;
+                margin-bottom: 50px;
+
+                .box_img {
+                    top     : 0;
+                    left    : 0;
+                   // border  : 1px solid green;
+                    position: relative;
+
+                    img {
+
+                        &:last-child {
+                            position: absolute;
+                            left    : 5px;
+                            top     : 5px;
+                            z-index : -1;
+                            opacity : 0.3;
+                        }
+                    }
+                }
+
+                .box_text {
+                   // border : 1px solid green;
+                    padding: 0 30px;
+
+                    .tytle_block {
+                        font-weight: bold;
+                        font-size  : 24px;
+                        color: $grey;
+                    }
+
+                    .discr_block {
+                        font-weight: normal;
+                        font-size  : 24px;
+                        line-height: 36px;
+                        color:$grey_light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px){
+
+    .ServicesForSellers {  
+
+        .blok_img{
+            height: 250px;
+        }
+        
+         .How_we_are_working {     
+             .blok_card {         
+                 span {
+                    &:nth-child(4), &:nth-child(8) , &:nth-child(12) {
+                        display: none;
+         
+                     }
+                 }
+             }
+         }
+
+
+         .service_block {
+           
+            .block_wrap {
+                grid-template-columns: 1fr;
+                .block {
+                    .box_img {
+                        img {
+                            &:last-child {
+                    
+                            }
+                        }
+                    }
+    
+                    .box_text {
+                       
+                        .tytle_block {
+                            
+                        }
+    
+                        .discr_block {
+                            
+                        }
+                    }
+                }
+            }
+        }
+        }     
+}
+
+@media (max-width: 768px){
+    .ServicesForSellers {  
+        .blok_img{
+            height: 200px;
+        }
+        .How_we_are_working {     
+            .blok_card {     
+                flex-direction: column;
+                align-items: center;    
+                span {
+                    &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12) {
+                       display: flex;
+                       transform: rotate(100grad);
+                    }
+                }
+            }
+        }
+      
+       }
+       
+}
+
+@media (max-width: 576px){
+    .ServicesForSellers {  
+        
+        .How_we_are_working {     
+            .blok_card {         
+                span {
+                   &:nth-child(4), &:nth-child(8) , &:nth-child(12) {
+                       display: none;
+        
+                    }
+                }
+            }
+        }
+
+
+        .service_block {
+          
+           .block_wrap {
+             padding: 50px 15px;
+               .block {
+                   flex-direction: column;
+                   .box_img {
+
+                       img {
+                           &:last-child {
+                   
+                           }
+                       }
+                   }
+   
+                   .box_text {
+                      padding: 0;
+                       .tytle_block {
+                           
+                       }
+   
+                       .discr_block {
+                           font-size: 18px;
+                       }
+                   }
+               }
+           }
+       }
+       }     
+}

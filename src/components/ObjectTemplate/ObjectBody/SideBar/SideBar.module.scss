@@ -2,15 +2,15 @@
 
 .SideBar {
     //border: 1px solid green;
-    width : 100%;
+    width   : 100%;
 
     ul.info {
         //border : 1px solid red;
-        padding: 0;
-        margin : 0;
+        padding  : 0;
+        margin   : 0;
 
         li {
-            height : 70px;
+            height : 68.5px;
             display: flex;
 
             &:nth-child(2n - 1) {
@@ -18,11 +18,11 @@
             }
 
             span {
-                display        : flex;
-                align-items    : center;
-                justify-content: flex-start;
-                height         : 100%;
-               // border         : 1px solid green;
+                display           : flex;
+                align-items       : center;
+                justify-content   : flex-start;
+                height            : 100%;
+                // border         : 1px solid green;
 
                 &:first-child {
                     padding-left: 15px;
@@ -62,8 +62,8 @@
             }
 
             .tel {
-                display       : flex;
-                flex-direction: column;
+                display        : flex;
+                flex-direction : column;
                 justify-content: center;
 
                 a {
@@ -74,18 +74,199 @@
         }
     }
 
-    ul.messengers{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
+    ul.messengers {
+        padding        : 0;
+        margin         : 0;
+        display        : flex;
+        align-items    : center;
         justify-content: space-between;
-        padding: 30px 15px;
+        padding        : 23px 15px;
+
+        li {
+            // border      :1px solid red ;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+        }
+
+        a {}
+
+        .viber {
+            //border  : 1px solid red;
+            position: relative;
+
+            .hint {
+                position     : absolute;
+                color        : $grey;
+                background   : $white;
+                bottom       : 90%;
+                left         : 90%;
+                border-radius: 7px 7px 7px 0;
+                padding      : 7px;
+                opacity: 0;
+                pointer-events: none;
+                transition: 0.5s;
+            }
+
+            &:hover {
+                .hint {
+                    transition: 0.3s;
+                    border: 2px solid #8f5db7;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+
+        }
     }
-    .wrap_button{
-    
-        button{
+
+    .wrap_button {
+
+        button {
             height: 60px;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .SideBar {
+
+        width: 100%;
+
+        ul.info {
+
+            li {
+                height: 47px;
+
+                &:nth-child(2n - 1) {}
+
+                span {
+
+                    &:first-child {}
+                }
+
+                .cena {}
+
+                .currency {}
+
+                .row_name_bold {}
+
+                .row_name {}
+
+                .params {}
+
+                .tel {
+
+
+                    a {}
+                }
+            }
+        }
+
+        ul.messengers {}
+
+        .wrap_button {
+
+            button {}
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .SideBar {
+        //border: 1px solid green;
+        width   : 100%;
+
+        ul.info {
+
+            li {
+                height: 47.5px;
+
+                &:nth-child(2n - 1) {}
+
+                span {
+
+                    &:first-child {
+                        font-size: 14px;
+                        width    : 40%;
+                    }
+                }
+
+                .cena {}
+
+                .currency {}
+
+                .row_name_bold {}
+
+                .row_name {}
+
+                .params {
+                    font-size: 14px;
+                }
+
+                .tel {
+
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        ul.messengers {}
+
+        .wrap_button {
+
+            button {}
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .SideBar {
+        ul.info {
+
+            li {
+                height: 40px;
+
+                span {
+
+                    &:first-child {
+                        font-size: 14px;
+                        width    : 50%;
+                    }
+                }
+
+                .cena {}
+
+                .currency {}
+
+                .row_name_bold {}
+
+                .row_name {}
+
+                .params {
+                    font-size: 14px;
+                }
+
+                .tel {
+
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        ul.messengers {}
+
+        .wrap_button {
+
+            button {}
         }
     }
 }

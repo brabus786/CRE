@@ -2,7 +2,14 @@ import React from 'react';
 import styles from './SimilarObjects.module.scss';
 import ObjectCard from '../../ObjectCard/ObjectCard';
 
-const SimilarObjects = () => {
+const SimilarObjects = (props) => {
+
+   
+
+   const similar = props.similar.map((data,i) => {
+     return <ObjectCard key={i} data={data} />
+   });
+
     return (
         <div className={styles.SimilarObjects}>
             <div className='container'>
@@ -13,10 +20,7 @@ const SimilarObjects = () => {
                    </p>
 
                     <div className={styles.block_card}>
-                        <ObjectCard />
-                        <ObjectCard />
-                        <ObjectCard />
-                        <ObjectCard />
+                        {similar}   
                     </div>
 
                 </div>

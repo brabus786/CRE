@@ -3,17 +3,18 @@
 
 .filter {
     width : 100%;
-    //border: 1px solid red;
     height: max-content;
     padding-right: 20px;
     box-sizing: border-box;
+    //border:1px solid red;
+    
 
     .filter_bar {
         //border         : 1px solid green;
         display        : flex;
         justify-content: space-between;
         align-items: center;
-        padding:30px 0;
+        padding:5px 0 20px 0;
 
         span {
             &:first-child {
@@ -28,9 +29,66 @@
                 font-size  : 14px;
                 color      : $grey_light;
                 font-weight: bold;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover{
+                    transition: 0.3s;
+                    color: $red;
+                }
             }
         }
 
     }
 
+}
+
+.wrapFilter{
+   position: relative;
+}
+.fixed {
+    position: sticky;
+    top:0px;
+    left: 0px;
+    width: 100%;
+
+}
+
+
+
+@media (max-width: 1200px){
+    
+}
+
+@media (max-width: 992px){
+    .filter {
+        padding-right: 0px;
+       
+    
+        .filter_bar {
+            padding-bottom: 15px;
+    
+            span {
+                &:first-child {
+                   
+                }
+    
+                &:last-child {
+                   
+                }
+            }
+    
+        }
+    
+    }
+}
+
+@media (max-width: 768px){
+   
+}
+
+@media (max-width: 576px){
+    .filter{
+        margin-bottom: 30px;
+    }
 }

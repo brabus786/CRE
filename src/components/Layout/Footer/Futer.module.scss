@@ -2,7 +2,7 @@
 
 .footer {
     background: $grey;
-    padding   : 20px 0;
+    padding   : 60px 0;
 
     .wrap {
         // border: 1px solid white;
@@ -12,6 +12,7 @@
             display           : flex;
             justify-content   : flex-start;
             align-items       : center;
+            margin-bottom: 50px;
 
             ul.telephone {
                 display     : flex;

@@ -1,11 +1,16 @@
 @import '../../../assets/styles/variables.scss';
 
 .wrap {
+    padding-bottom: 30px;
     h1 {
         font-weight: bold;
         font-size  : 30px;
         color:$grey;
         margin:0 0 30px 0;
+
+        &:first-letter{
+            text-transform: uppercase;
+        }
     }
 
     .info_blok{
@@ -14,5 +19,45 @@
         grid-template-columns: auto 370px;
         column-gap: 20px;
         padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+    .wrap {
+        h1 {
+    
+        }
+    
+        .info_blok{
+           padding-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 992px){
+
+    .wrap {
+        h1 {
+    
+        }
+    
+        .info_blok{
+           padding-bottom: 0;
+           grid-template-columns: auto 250px;
+        }
+    }
+}
+@media (max-width: 768px){
+    
+    .wrap {
+        h1 {
+    
+        }
+    
+        .info_blok{
+           padding-bottom: 0;
+           grid-template-columns: auto;
+           row-gap: 30px;
+        }
     }
 }

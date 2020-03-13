@@ -1,15 +1,40 @@
 @import '../../../assets/styles/variables.scss';
-.Switch{
 
-    button{
-        width: 50%;
-        border:1px solid $orange;
-        height: 40px;
-        font-size: 14px;
-        font-weight: bold;
-        box-sizing: border-box;
-        cursor: pointer;
+.Switch {
+    // border:1px solid red;
+    display  : flex;
+
+    label {
+        width          : 50%;
+        border         : 1px solid $orange;
+        height         : 40px;
+        font-size      : 14px;
+        font-weight    : bold;
+        box-sizing     : border-box;
+        cursor         : pointer;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
     }
 
+    input[type='radio']{
+        display: none;
+        &:checked + label{
+            background:$orange;
+            color:$white;
+        }
+    }
+
+
+
+
     margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 992px){
+    .Switch{
+        margin-bottom: 15px;
+    }
 }
